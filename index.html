@@ -1,73 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Everardo Cortés</title>
+    <meta
+      name="description"
+      content="Portafolio personal de Everardo Cortés - Desarrollador de Software"
+    />
+    <title>Everardo Cortés | Desarrollador de Software</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./assets/images/profile.png" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="navbar-container">
-          <nav class="navbar">
-            <div class="logo">Everardo Cortés</div>
-            <ul>
-              <li>
-                <a href="#main-container">Inicio</a>
-              </li>
-              <li>
-                <a href="#about-container">Acerca de mi</a>
-              </li>
-              <li>
-                <a href="#projects-container">Proyectos</a>
-              </li>
-              <li>
-                <a href="#contact-container">Contacto</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <nav class="navbar">
+        <div class="logo">Everardo Cortés</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#inicio" aria-label="Ir a sección de inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#acerca" aria-label="Ir a sección acerca de mí"
+              >Acerca de mi</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" aria-label="Ir a sección de proyectos"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" aria-label="Ir a sección de contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <section class="main-container">
-          <h1>Hi, I'm Everardo Cortés</h1>
+      <section id="inicio" class="main-container">
+        <div class="hero-content">
+          <h1>Hola, soy Everardo Cortés</h1>
           <p>
             Soy un estudiante de ingeniería en software en sus últimos
             semestres, me gusta la tecnología en general y me encanta aprender
             cosas cada día.
           </p>
-          <img src="./assets/images/profile.png" alt="Everardo Cortés" />
+          <img
+            src="./assets/images/profile.png"
+            alt="Foto de perfil de Everardo Cortés"
+          />
           <div class="social-media">
             <a
               href="https://www.linkedin.com/in/everardo-cort%C3%A9s-cort%C3%A9s-0000000000000000/"
-              >LinkedIn
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar mi perfil de LinkedIn"
+            >
+              LinkedIn
             </a>
-            <a href="https://github.com/EverCrts">GitHub </a>
+            <a
+              href="https://github.com/EverCrts"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar mi perfil de GitHub"
+            >
+              GitHub
+            </a>
           </div>
-          <button class="download-cv">Descargar CV</button>
+          <a href="./assets/cv.pdf" class="download-cv" download
+            >Descargar CV</a
+          >
+        </div>
       </section>
-      <section class="about-container">
-          <h2>Acerca de mi</h2>
-          <div class="study-container">
+
+      <section id="acerca" class="about-container">
+        <h2>Acerca de mi</h2>
+        <div class="about-content">
+          <article class="study-container">
+            <h3>Formación Académica</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi officia eveniet, magni voluptatum rem quam et. Veniam, autem reiciendis quia ratione ab similique enim. Facere odit nemo corrupti veniam.
+              Estudiante de Ingeniería en Software con enfoque en desarrollo web
+              y aplicaciones móviles. Comprometido con el aprendizaje continuo y
+              las mejores prácticas de desarrollo.
             </p>
-          </div>
-          <div class="tech-container">
+          </article>
+          <article class="tech-container">
+            <h3>Habilidades Técnicas</h3>
             <p>
-              Lorem ipsum dolors sit amet consectetur adipisicing elit. Tempora nisi officia eveniet, magni voluptatum rem quam et. Veniam, autem reiciendis quia ratione ab similique enim. Facere odit nemo corrupti veniam.
+              Experiencia en desarrollo frontend con HTML, CSS y JavaScript.
+              Conocimientos en frameworks modernos y metodologías ágiles.
             </p>
-          </div>
+          </article>
+        </div>
       </section>
-      <section class="projects-container">
-          <h2>Proyectos</h2>
-          <div class="project-card">
+
+      <section id="proyectos" class="projects-container">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
             <h3>Proyecto 1</h3>
-            <img src="./assets/images/project1.png" alt="Project 1" />
+            <img
+              src="./assets/images/project1.png"
+              alt="Captura del Proyecto 1"
+            />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi officia eveniet, magni voluptatum rem quam et. Veniam, autem reiciendis quia ratione ab similique enim. Facere odit nemo corrupti veniam.
+              Descripción detallada del proyecto, tecnologías utilizadas y
+              resultados obtenidos.
             </p>
             <div class="project-technologies">
               <span>HTML</span>
@@ -75,37 +115,72 @@
               <span>JavaScript</span>
             </div>
             <div class="project-buttons">
-              <a href="#">Demo</a>
-              <a href="#">Código</a>
+              <a
+                href="#"
+                class="btn-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo</a
+              >
+              <a
+                href="#"
+                class="btn-code"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
             </div>
-          </div>
+          </article>
+        </div>
       </section>
-      <section class="contact-container">
-          <h2>Contacto</h2>
-          <div class="contact-form">
-            <form action="">
-              <input type="text" placeholder="Nombre" />
-              <input type="email" placeholder="Correo" />
-              <textarea name="message" id="message" placeholder="Hola"></textarea>
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
-          
+
+      <section id="contacto" class="contact-container">
+        <h2>Contacto</h2>
+        <div class="contact-content">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+
           <div class="contact-info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nisi officia eveniet, magni voluptatum rem quam et. Veniam, autem reiciendis quia ratione ab similique enim. Facere odit nemo corrupti veniam.
+              ¿Interesado en trabajar juntos? No dudes en contactarme a través
+              de cualquiera de estos medios.
             </p>
             <div class="contact-info-buttons">
-              <a href="#">LinkedIn</a>
-              <a href="#">GitHub</a>
-              <a href="#">Correo</a>
-              <a href="#">CV</a>
+              <a
+                href="https://www.linkedin.com/in/everardo-cort%C3%A9s-cort%C3%A9s-0000000000000000/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/EverCrts"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a href="mailto:tu@email.com">Correo</a>
+              <a href="./assets/cv.pdf" download>CV</a>
             </div>
           </div>
+        </div>
       </section>
     </main>
-      
-      <footer>J. Everardo Cortés Cortés. 2025.</footer>
-    </div>
+
+    <footer>
+      <p>2025 J. Everardo Cortés Cortés.</p>
+    </footer>
   </body>
 </html>
